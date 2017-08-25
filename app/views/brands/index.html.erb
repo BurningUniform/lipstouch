@@ -1,0 +1,6 @@
+<ul class="collection with-header">
+ <li class="collection-header"><h4>전체 브랜드</h4></li>
+<% @brands.each do |brand| %>
+   <li class="collection-item"><%= link_to brand.title, brand_path(brand) %></li>
+<% end %>
+</ul>
